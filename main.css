@@ -1,0 +1,410 @@
+/**************************
+font-family: 'Questrial', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Poiret One', cursive;
+
+
+COLORS
+grey-green/slate: #505F65;
+text grey: #776B76;
+light green: #BECDC0
+********************************/
+
+
+* {
+  box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    flex: 1 0 auto;
+}
+
+h1, h2{
+    font-family: 'Poiret One', cursive;
+    color: #505F65;
+}
+h2{
+    text-align:center;
+}
+
+p, a, li {
+    font-family:'Questrial', sans-serif;
+    color: #776b76;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+p{
+    line-height:1.4em;
+    letter-spacing: .01em;
+}
+
+
+.mainNav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 4px solid #505f65;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.active{
+    text-transform:uppercase;
+}
+
+.logoAndName{
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+}
+
+.mobileLogo{
+    display:none;
+}
+.logoAndName img {
+   max-width:80px;
+}
+.logoAndName h1{
+    padding-left:4px;
+}
+.navLinksContainer, .navLinks {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.navLinks a{
+    padding-right:20px;
+}
+.navLinks a:hover{
+    opacity: .8;
+}
+
+.header {
+    height: 240px;
+    background-image: url(/images/naturopath-winnipeg1.png);
+    background-size:cover;
+}
+.mainContent{
+    width: 70%;
+    padding-left:12%;
+    padding-right:12%;
+    padding-bottom:2%;
+    margin: 60px auto;
+    box-shadow: 0 0 10px #d3d3d3;
+    border-radius: 6px;
+}
+.tagline{
+    text-align:center;
+    padding-top:20px;
+}
+
+.footer img{
+    max-width:60px;
+    margin-right: 20px;
+}
+
+
+.footer button{
+    padding:12px;
+    margin:1%;
+    width: 200px;
+    border: 3px solid white;
+    border-radius: 10px;
+    }
+
+.footerButtons{
+    width: 100%;
+}
+button a{
+    color: white;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin: 0 auto;
+}
+button{
+    border-radius: 50px;
+    color: white;
+    background-color: #505F65;
+    padding:10px;
+    border: 2px solid #becdc0;
+    transition: all ease 0.4s;
+    width:100%;
+    }
+button:hover{
+    box-shadow: 0 2px 2px 2px #808080;
+    background-color: #BECDC0;
+}
+.footer{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    min-height:180px;
+    align-items:center;
+    background-color: #505f65;
+}
+.subFooter{
+    background-color: #BECDC0;
+}
+.footerLinksContainer{
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+    justify-content: space-between;
+    
+}
+.footerLinksContainer a{
+    color: white;
+}
+.footerLinksContainer a:hover{
+    color: #BECDC0;
+}
+.footerCopyright{
+    display:flex;
+    width: 98%;
+    justify-content: space-between;
+}
+.footerCopyright p{
+    color: #505f65;
+    font-size: 1em;
+    padding-left: 20px;
+    
+}
+.footerCopyright img{
+    max-width:75px;
+}
+.footerTagline h2{
+    color: white;
+    margin: 0 auto;
+}
+
+/******************************
+SERVICES PAGE
+******************************/
+.serviceContent{
+    padding: 2%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin: 2%;
+}
+.serviceContent h1{
+    flex: 1 100%;
+    text-align:center;
+}
+.service{
+    box-shadow: 0 0 10px #d3d3d3;
+    border-radius: 6px;
+    padding: 2%;
+    margin: 1%;
+    flex: 1 30%;
+    transition: all 0.4s ease;
+}
+.service:hover{
+    box-shadow: 2px 2px 14px #808080;
+}
+.service p{
+    text-align: center;
+}
+.serviceContainer{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+}
+.serviceImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.serviceHeader{
+    display: none;
+}
+
+/******************************
+ABOUT PAGE
+******************************/
+.aboutContainer{
+    display:flex;
+    width: 80%;
+    margin:0 auto;
+    justify-content: center;
+}
+.aboutContent{
+   padding: 4%; 
+}
+.aboutImage{
+    margin:60px 0 0 60px;
+    flex: 1;
+}
+.aboutImage img{
+    border-radius:8px;
+}
+
+/******************************
+CONTACT PAGE
+******************************/
+.contactContent, .contact, .hours, .map{
+    box-shadow: 0 0 10px #d3d3d3;
+    border-radius: 6px;
+    padding: 2%;
+}
+.contactContent{
+    width: 80%;
+     margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact, .hours{
+    flex:1 30%;
+    margin:2% 4%;
+    max-width: 400px;
+}
+.map{
+    margin:2% 4%;
+}
+.contact p, .hours p{
+    text-align: center;
+}
+iframe{
+    max-width: 100%;
+}
+.contactPics{
+    flex: 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contactPics img{
+    border-radius: 8px;
+}
+/******************************
+FREE CONSULTATION/BOOKING
+******************************/
+.bookingContent{
+    padding-top: 3%;
+}
+/******************************
+RESPONSIVENESS
+******************************/
+@media (max-width: 600px){
+    .service{
+        flex: 1 100%;
+    }
+    .contactContent{
+        width: 92%;
+    }
+    .logoAndName img {
+        max-width:40px;
+    }
+    .siteTitle{
+        font-size: 1.3em;
+    }
+    .footerLinksContainer{
+       flex-wrap:wrap;
+        justify-content:center;
+        margin: 0 auto;
+    }
+    .footerLinksContainer a{
+        padding: 10px;
+    }
+    .footerLinksContainer p{
+        flex:1 100%;
+        text-align: center;
+        margin: 6px auto;
+    }
+    .footer{
+        min-height:340px;
+    }
+    .footerTagline h2{
+         font-size: 1.2em;
+    }
+
+}
+
+@media (max-width: 700px){
+    .serviceImages{
+        display:none;
+    }
+}
+@media (max-width: 800px){
+    .mainNav{
+        flex-direction: column;
+    }
+    .navLinksContainer, .logoAndName{
+        justify-content:center;
+        padding-left:0;
+    }
+    .button{
+        width:70%;
+    }
+    .aboutContainer{
+        flex-direction: column;
+    }
+    .aboutImage{
+        text-align: center;
+        margin: 4% auto 0;
+        order: 1;
+    }
+    .aboutContent{
+        order:2;
+    }
+    .aboutImage img{
+        max-width: 90%;
+    }
+    
+}
+
+@media (max-width: 1100px){
+    .mainContent.aboutContent{
+        flex: 1 0 50%;
+    }
+    .contactPics img{
+        max-width: 300px;
+    }
+    .contactPics{
+        order:4;
+    }
+    .contact{
+        order: 1;
+    }
+    .hours{
+        order:2;
+    }
+    .map{
+        order:3;
+    }
+    .footerLinksContainer{
+        width:90%;
+    }
+    
+    
+}
+@media (max-width: 1300px){
+    .mainContent{
+        width: 90%;
+    }
+    .header{
+        height: 180px;
+    }
+    
+    
+}
+
+@media(min-width: 1200px){
+    .serviceContent{
+        flex: 1 100%;
+    }
+}
