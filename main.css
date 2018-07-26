@@ -259,6 +259,10 @@ ABOUT PAGE
     border-radius:8px;
 }
 
+.patientName{
+	text-align: right;
+}
+
 /******************************
 CONTACT PAGE
 ******************************/
