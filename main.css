@@ -101,7 +101,7 @@ p{
 
 .header {
     height: 240px;
-    background-image: url(/images/naturopath-winnipeg1.png);
+    background-image: url(images/naturopath-winnipeg1.png);
     background-size:cover;
 }
 .mainContent{
@@ -285,6 +285,7 @@ CONTACT PAGE
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+	padding-top:60px;
 }
 .contact, .hours{
     flex:1 30%;
@@ -293,6 +294,7 @@ CONTACT PAGE
 }
 .map{
     margin:2% 4%;
+	display: none;
 }
 .contact p, .hours p{
     text-align: center;
